@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<head>
+
+	<!-- swiper css -->
+
+	<link rel="stylesheet" type="text/css" href="swiper.min.css">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- jquery from internet (navigation) -->
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/5223c438f5.js" crossorigin="anonymous"></script>
+
+	
+
+
+	
+
+	<title>Marc Galleno</title>
+
+
+</head>
+
+
+<style type="text/css">
+
+
+
+
+
+
+
+
+</style>
+
+
+<body>
+
+
+	<!-- Navbar -->
+
+
+	<nav class="navbar navbar-expand-lg navbar-dark" id="nav-main">
+	  <a class="brand navbar-brand" href="#">MARC GABRIEL GALLENO</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <div class="collapse navbar-collapse" id="navbarColor01">
+	  	
+	    <ul class="navbar-nav" id="ul_text">
+	      <li class="nav-item dropdown">
+	              <a class="nav_text nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                Projects
+	              </a>
+	              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+	                <a class="dropdown-item" onclick="openNav()">Adobe Photoshop</a>
+	                <a class="dropdown-item" onclick="openNav2()">Video Projects</a>
+	              </div>
+	            </li>
+	      <li class="nav-item">
+	        <a class="nav_text nav-link" onclick="openNavAboutMe()">About Me</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav_text nav-link" data-toggle="modal" data-target="#exampleModal">Contact</a>
+	      </li>
+	    </ul>
+	   <!--  <form class="form-inline my-2 my-lg-0">
+	      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+	      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+	    </form> -->
+	  </div>
+	</nav>
+
+
+
+<!-- Sidebar Content -->
+
+
+	<div id="mySidebar" class="sidebar">
+	  
+	  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+
+	  	<div class="insideme d-flex flex-wrap">
+			
+			<div class="box">
+				
+				<img onclick="openSkill()" class="project-image" src="1.png">
+
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill2()" class="project-image" src="2.png">
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill3()" class="project-image" src="3.png">
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill4()" class="project-image" src="4.jpg">
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill5()" class="project-image" src="5.jpg">
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill6()" class="project-image" src="6.jpg">
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill7()" class="project-image" src="7.jpg">
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill8()" class="project-image" src="8.jpg">
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill9()" class="project-image" src="9.jpg">
+
+
+			</div>
+
+			<div class="box">
+				
+				<img onclick="openSkill10()" class="project-image" src="10.jpg">
+
+
+			</div>
+
+
+			<div class="box">
+				
+				<img onclick="openSkill11()" class="project-image" src="11.png">
+
+
+			</div>
+
+
+			<div class="box">
+				
+				<img onclick="openSkill12()" class="project-image" src="12.png">
+
+
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<div id="mySidebar2" class="sidebar2">
+	  
+	  	<a href="javascript:void(0)" class="closebtn2" onclick="closeNav2()">×</a>
+
+	  	  	<div class="insideme d-flex flex-wrap">
+	  			
+	  			<div class="box" onclick="window.open('https://drive.google.com/file/d/1Pz-XpHcqWMdk9Epufxcz_dUDDwV3h0mP/view?usp=drive_link/', '_blank')">
+	  				
+	  				<img class="project-image2" src="dagat.jpg">
+	  				<h6 class="skill-title">Dagat</h6>
+	  				<p class="description">Fun Film</p>	
+
+
+	  			</div>
+
+	  			<div class="box" onclick="window.open('https://drive.google.com/file/d/1i_BmVF0HdW9wrhEU41sSSSFEo6B9WJB2/view?usp=sharing/', '_blank')">
+	  				
+	  				<img class="project-image2" src="prog.jpg">
+	  				<h6 class="skill-title">Programming</h6>
+	  				<p class="description">comlab Fun Film</p>	
+
+	  			</div>
+
+	  			<div class="box" onclick="window.open('https://drive.google.com/file/d/1gAJ4BWNCZt7NYsuN8vC6k33KnQj99aBu/view?usp=sharing/', '_blank')">
+	  				
+	  				<img class="project-image2" src="onzae.jpg">
+	  				<h6 class="skill-title">KKKK</h6>
+	  				<p class="description">Edit Commission</p>
+
+	  			</div>
+
+	  			<div class="box" onclick="window.open('https://drive.google.com/file/d/1yDgy-nu4TM35xvK0dkyMa1qiDkc-Sk0Z/view?usp=drive_link/', '_blank')">
+	  				
+	  				<img class="project-image2" src="3.png">
+	  				<h6 class="skill-title">KOLYAR</h6>
+	  				<p class="description">Filmfest Edits" ft Aly Pacheco</p>
+
+	  			</div>
+				
+		</div>
+
+	</div>
+
+
+
+
+<!-- About me -->
+
+
+	<div id="about-me" class="about-me-overlay">
+	  
+	  <div class="about-me-overlay-content">
+	    <img src="profilepic.png" class="profilepic-img">
+		    <p class="content">Hi there! I'm Marc.</p>
+		    <p class="content">A Student from Manuel S. Enverga University taking Information Technology. A Future Web Developer
+			who loves doing Adobe Photoshop on the side and editing in the other side. 
+			</p>	
+			<p class="content">I am fluent on Premiere Pro and Adobe Photoshop. 
+			<p class="content">I believe in continous learning and I strive to be better in
+			what I am doing.</p>	
+			</p>
+			<p class="content">Feel free to explore my portfolio and please don't hesitate to contact me
+			if you think I can be of any service to you.
+			</p>
+	    <p class="closebtn2" onclick="closeNavAboutMe()">&times;</p>
+	   
+	  </div>
+	</div>
+
+
+<!-- Contaact me -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+
+	      	<div class="emails text-center">
+	        <p>You can reach me through the following:</p>
+	        <p><i class="fab fa-google" style="color:red"></i>&nbsp;gallenomarc@gmail.com</p>
+	        <p><i class="fas fa-mobile-alt" style="color:black"></i>&nbsp;09762852863</p>
+	      	</div>  
+
+	      </div>
+	     
+	    </div>
+	  </div>
+	</div>
+
+
+
+<!--tagline  -->
+
+<div class="col-lg-12">
+	<h1 class="tagline">Bring forth your ideas and passion into fruition</h1>
+</div>
+
+
+<!-- Home face content -->
+
+
+
+	<div class="main col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto p-0 mt-4" id="section-1">
+
+		<!-- <img src="left_new_bnw.png" id="left_img">
+		<img src="left_with_skills_new.png" id="left_img2"> -->
+		<div class="container">
+		  <img src="left_new_bnw.png" class="image">
+		  <div class="overlay-1">
+		  </div>
+		  <div onclick="openNav()" class="overlay" id="nge">
+		  </div>
+		</div>
+
+		<div class="container2">
+		  <img src="right_new_bnw.png" class="image2">
+		  <div class="overlay-2">
+		  </div>
+		  <div onclick="openNav2()" class="overlay2">
+		  </div>
+		</div>
+		
+
+		<div class="container3">
+		  <img src="384bnw.png" class="image3">
+		  <div onclick="openNav3()" class="overlay3">
+		  </div>
+		</div>
+
+		<div class="container4">
+		  <img src="384bnwright.png" class="image4">
+		  <div onclick="openNav4()" class="overlay4">
+		  </div>
+		</div>
+	
+
+		<div class="container5">
+		  <img src="207bnwleft.png" class="image5">
+		  <div onclick="openNav5()" class="overlay5">
+		  </div>
+		</div>
+
+		<div class="container6">
+		  <img src="207bnwright.png" class="image6">
+		  <div onclick="openNav6()" class="overlay6">
+		  </div>
+		</div>
+
+		<div class="container7">
+		  <img src="187bnwleft.png" class="image7">
+		  <div onclick="openNav7()" class="overlay7">
+		  </div>
+		</div>
+
+		<div class="container8">
+		  <img src="187bnwright.png" class="image8">
+		  <div onclick="openNav8()" class="overlay8">
+		  </div>
+		</div>
+
+	</div>
+	
+		<!-- <img src="right_new_bnw.png" id="right_img">
+		<img src="right_with_skills_new.png" id="right_img2"> -->
+		
+
+	<!--Adobe photoshop Skills modal  -->
+
+	<div id="skill" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="1.png" id="lesstalk">
+	    <p class="closebtn3" onclick="closeSkill()">&times;</p>
+	   
+	  </div>
+	</div>
+
+
+
+	<div id="skill2" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="2.png">
+	  	<p class="closebtn3" onclick="closeSkill2()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill3" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="3.png">
+	    <p class="closebtn3" onclick="closeSkill3()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill4" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="4.jpg">
+	    <p class="closebtn3" onclick="closeSkill4()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill5" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="5.jpg">
+	    <p class="closebtn3" onclick="closeSkill5()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill6" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="6.jpg">
+	    <p class="closebtn3" onclick="closeSkill6()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill7" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="7.jpg">
+	    <p class="closebtn3" onclick="closeSkill7()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill8" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="8.jpg">
+	    <p class="closebtn3" onclick="closeSkill8()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill9" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="9.jpg">
+	    <p class="closebtn3" onclick="closeSkill9()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill10" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="10.jpg">
+	    <p class="closebtn3" onclick="closeSkill10()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill11" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="11.png">
+	    <p class="closebtn3" onclick="closeSkill11()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+	<div id="skill12" class="skill-overlay">
+	  
+	  <div class="skill-overlay-content">
+	    <img src="12.png">
+	    <p class="closebtn3" onclick="closeSkill12()">&times;</p>
+	   
+	   
+
+	  </div>
+	</div>
+
+
+
+
+
+
+	
+			<script>
+					
+				//Sidebar Script
+
+
+					 function openNav() {
+						
+					  document.getElementsByClassName("insideme")[0].style.opacity = "1";
+					  document.getElementsByClassName("overlay-1")[0].style.opacity = "1";
+					  document.getElementById("mySidebar").style.width = "50%";
+					  document.getElementsByClassName("bingo-card-container")[0].style.marginRight = "50%";
+					 
+					  
+					}
+
+					function closeNav() {
+					  document.getElementsByClassName("overlay-1")[0].style.opacity = "0";	
+					  document.getElementsByClassName("overlay3")[0].style.opacity = "0";	
+					  document.getElementsByClassName("overlay5")[0].style.opacity = "0";	
+					  document.getElementsByClassName("overlay7")[0].style.opacity = "0";	
+					  document.getElementById("mySidebar").style.width = "0";
+					  document.getElementsByClassName("bingo-card-container")[0].style.margin = "0";
+					
+	
+					}
+
+
+					function openNav2() {
+					  document.getElementsByClassName("overlay-2")[0].style.opacity = "1";	
+					  document.getElementById("mySidebar2").style.width = "50%";
+					  document.getElementsByClassName("bingo-card-container2")[0].style.marginLeft = "50%";
+					 
+					  
+					}
+
+					function closeNav2() {
+					  document.getElementsByClassName("overlay-2")[0].style.opacity = "0";	
+					  document.getElementsByClassName("overlay4")[0].style.opacity = "0";	
+					  document.getElementsByClassName("overlay6")[0].style.opacity = "0";		
+					  document.getElementsByClassName("overlay8")[0].style.opacity = "0";	
+					  document.getElementById("mySidebar2").style.width = "0";
+					  document.getElementsByClassName("bingo-card-container2")[0].style.margin = "0";
+					  
+					  
+					}
+
+
+					function openNav3() {
+					  document.getElementsByClassName("overlay3")[0].style.opacity = "1";	
+					  document.getElementById("mySidebar").style.width = "50%";
+					  document.getElementsByClassName("bingo-card-container")[0].style.marginLeft = "50%";
+					 
+					  
+					}
+
+
+					function openNav4() {
+					  document.getElementsByClassName("overlay4")[0].style.opacity = "1";	
+					  document.getElementById("mySidebar2").style.width = "50%";
+					  document.getElementsByClassName("bingo-card-container2")[0].style.marginLeft = "50%";
+					 
+					  
+					}
+
+
+					function openNav5() {
+					  document.getElementsByClassName("overlay5")[0].style.opacity = "1";	
+					  document.getElementById("mySidebar").style.width = "50%";
+					  document.getElementsByClassName("bingo-card-container")[0].style.marginLeft = "50%";
+					 
+					  
+					}
+
+					
+					function openNav6() {
+					  document.getElementsByClassName("overlay6")[0].style.opacity = "1";	
+					  document.getElementById("mySidebar2").style.width = "50%";
+					  document.getElementsByClassName("bingo-card-container2")[0].style.marginLeft = "50%";
+					 
+					  
+					}
+
+					
+					function openNav7() {
+					  document.getElementsByClassName("overlay7")[0].style.opacity = "1";	
+					  document.getElementById("mySidebar").style.width = "50%";
+					  document.getElementsByClassName("bingo-card-container")[0].style.marginLeft = "50%";
+					 
+					  
+					}
+
+					
+
+					function openNav8() {
+					  document.getElementsByClassName("overlay8")[0].style.opacity = "1";	
+					  document.getElementById("mySidebar2").style.width = "50%";
+					  document.getElementsByClassName("bingo-card-container2")[0].style.marginLeft = "50%";
+					 
+					}  
+
+				//About me script
+
+					function openNavAboutMe() {
+					  document.getElementById("about-me").style.display = "block";
+
+					}
+
+					function closeNavAboutMe() {
+					  document.getElementById("about-me").style.display = "none";
+					} 
+
+
+
+				//Skill overlay
+
+					function openSkill() {
+					  document.getElementById("skill").style.display = "block";
+
+					}
+
+					function closeSkill() {
+					  document.getElementById("skill").style.display = "none";
+					}
+
+
+					function openSkill2() {
+					  document.getElementById("skill2").style.display = "block";
+
+					}
+
+					function closeSkill2() {
+					  document.getElementById("skill2").style.display = "none";
+					}
+
+					function openSkill3() {
+					  document.getElementById("skill3").style.display = "block";
+
+					}
+
+					function closeSkill3() {
+					  document.getElementById("skill3").style.display = "none";
+					}
+
+
+					function openSkill4() {
+					  document.getElementById("skill4").style.display = "block";
+
+					}
+
+					function closeSkill4() {
+					  document.getElementById("skill4").style.display = "none";
+					}
+
+
+					function openSkill5() {
+					  document.getElementById("skill5").style.display = "block";
+
+					}
+
+					function closeSkill5() {
+					  document.getElementById("skill5").style.display = "none";
+					}
+
+
+					function openSkill6() {
+					  document.getElementById("skill6").style.display = "block";
+
+					}
+
+					function closeSkill6() {
+					  document.getElementById("skill6").style.display = "none";
+					}
+
+
+					function openSkill7() {
+					  document.getElementById("skill7").style.display = "block";
+
+					}
+
+					function closeSkill7() {
+					  document.getElementById("skill7").style.display = "none";
+					}
+
+
+					function openSkill8() {
+					  document.getElementById("skill8").style.display = "block";
+
+					}
+
+					function closeSkill8() {
+					  document.getElementById("skill8").style.display = "none";
+					}
+
+
+					function openSkill9() {
+					  document.getElementById("skill9").style.display = "block";
+
+					}
+
+					function closeSkill9() {
+					  document.getElementById("skill9").style.display = "none";
+					}
+
+
+					function openSkill10() {
+					  document.getElementById("skill10").style.display = "block";
+
+					}
+
+					function closeSkill10() {
+					  document.getElementById("skill10").style.display = "none";
+					}
+
+
+					function openSkill11() {
+					  document.getElementById("skill11").style.display = "block";
+
+					}
+
+					function closeSkill11() {
+					  document.getElementById("skill11").style.display = "none";
+					}
+
+
+					function openSkill12() {
+					  document.getElementById("skill12").style.display = "block";
+
+					}
+
+					function closeSkill12() {
+					  document.getElementById("skill12").style.display = "none";
+					} 
+
+
+
+
+
+
+			</script>
+
+			
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+ 
+
